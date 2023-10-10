@@ -1,15 +1,16 @@
 <?php
 
 require_once 'RPN.php';
+require_once 'RPNCalculator.php';
 use PHPUnit\Framework\TestCase;
 
-class RPNTest extends TestCase {
+class RPNCalculatorTest extends TestCase {
 
     private RPN $rpn;
 
     protected function setUp(): void
     {
-        $this->rpn = new RPN();
+        $this->rpn = new RPNCalculator();
     }
 
     public function testSimpleAddition() {
